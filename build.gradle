@@ -99,7 +99,7 @@ repositories {
 
 
 dependencies {
-	compile 'ari4java:codegen'
+//	compile 'ari4java:codegen'
 
 	compile 'com.fasterxml.jackson.core:jackson-core:2.9.6'
 	compile 'com.fasterxml.jackson.core:jackson-databind:2.9.6'
@@ -110,14 +110,14 @@ dependencies {
 	testCompile 'junit:junit:4.10'
 }
 
-task buildCodegen {
-    dependsOn gradle.includedBuild('codegen').task(':build')
-}
-
-task runCodegen(type:JavaExec) {
-	main = 'ch.loway.oss.ari4java.codegen.run'
-	classpath sourceSets.main.compileClasspath
-}
+//task buildCodegen {
+//    dependsOn gradle.includedBuild('codegen').task(':build')
+//}
+//
+//task runCodegen(type:JavaExec) {
+//	main = 'ch.loway.oss.ari4java.codegen.run'
+//	classpath sourceSets.main.compileClasspath
+//}
 
 task setVersionInSources() {
 	doLast {
@@ -144,8 +144,8 @@ task setVersionInSources() {
 	}
 }
 
-runCodegen.dependsOn buildCodegen
-setVersionInSources.dependsOn runCodegen
+//runCodegen.dependsOn buildCodegen
+//setVersionInSources.dependsOn runCodegen
 compileJava.dependsOn setVersionInSources
 
 // decide what to see -only one can be enabled

@@ -3,7 +3,7 @@ package ch.loway.oss.ari4java.generated.ari_2_0_0.actions;
 // ----------------------------------------------------
 //      THIS CLASS WAS GENERATED AUTOMATICALLY         
 //               PLEASE DO NOT EDIT                    
-//    Generated on: Tue Dec 19 09:55:49 CET 2017
+//    Generated on: Wed Oct 02 15:49:50 SAST 2019
 // ----------------------------------------------------
 
 import ch.loway.oss.ari4java.generated.*;
@@ -415,6 +415,16 @@ httpActionAsync(callback);
 }
 
 /**********************************************************
+ * Add a channel to a bridge.
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public void addChannel(String bridgeId, String channel, String role, boolean absorbDTMF, boolean mute) throws RestException{
+  throw new UnsupportedOperationException("Method availble from ...");
+};
+
+/**********************************************************
  * Start playback of media on a bridge.
  * The media URI may be any of a number of URI's. Currently sound: and recording: URI's are supported. This operation creates a playback resource that can be used to control the playback of media (pause, rewind, fast forward, etc.)
  * 
@@ -449,6 +459,15 @@ public Bridge create(String type, String name) throws RestException{
  * @since ari_1_5_0
  *********************************************************/
 public void create_or_update_with_id(String type, String bridgeId, String name, AriCallback<Bridge> callback){
+  throw new UnsupportedOperationException("Method availble from ...");
+};
+
+/**********************************************************
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public void addChannel(String bridgeId, String channel, String role, boolean absorbDTMF, boolean mute, AriCallback<Void> callback){
   throw new UnsupportedOperationException("Method availble from ...");
 };
 

@@ -3,7 +3,7 @@ package ch.loway.oss.ari4java.generated.ari_0_0_1.actions;
 // ----------------------------------------------------
 //      THIS CLASS WAS GENERATED AUTOMATICALLY         
 //               PLEASE DO NOT EDIT                    
-//    Generated on: Tue Dec 19 09:55:49 CET 2017
+//    Generated on: Wed Oct 02 15:49:50 SAST 2019
 // ----------------------------------------------------
 
 import ch.loway.oss.ari4java.generated.*;
@@ -313,6 +313,16 @@ public void create(String type, String bridgeId, String name, AriCallback<Bridge
 };
 
 /**********************************************************
+ * Add a channel to a bridge.
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public void addChannel(String bridgeId, String channel, String role, boolean absorbDTMF, boolean mute) throws RestException{
+  throw new UnsupportedOperationException("Method availble from ...");
+};
+
+/**********************************************************
  * 
  * 
  * @since ari_1_5_0
@@ -385,6 +395,15 @@ public void create_or_update_with_id(String type, String bridgeId, String name, 
  * @since ari_2_0_0
  *********************************************************/
 public void setVideoSource(String bridgeId, String channelId) throws RestException{
+  throw new UnsupportedOperationException("Method availble from ...");
+};
+
+/**********************************************************
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public void addChannel(String bridgeId, String channel, String role, boolean absorbDTMF, boolean mute, AriCallback<Void> callback){
   throw new UnsupportedOperationException("Method availble from ...");
 };
 

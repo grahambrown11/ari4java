@@ -3,7 +3,7 @@ package ch.loway.oss.ari4java.generated.ari_1_5_0.actions;
 // ----------------------------------------------------
 //      THIS CLASS WAS GENERATED AUTOMATICALLY         
 //               PLEASE DO NOT EDIT                    
-//    Generated on: Tue Dec 19 09:55:49 CET 2017
+//    Generated on: Wed Oct 02 15:49:50 SAST 2019
 // ----------------------------------------------------
 
 import ch.loway.oss.ari4java.generated.*;
@@ -742,11 +742,31 @@ public void redirect(String channelId, String endpoint, AriCallback<Void> callba
 };
 
 /**********************************************************
+ * Move the channel from one Stasis application to another.
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public void move(String channelId, String app, String appArgs) throws RestException{
+  throw new UnsupportedOperationException("Method availble from ...");
+};
+
+/**********************************************************
  * 
  * 
  * @since ari_1_7_0
  *********************************************************/
 public void originate(String endpoint, String extension, String context, long priority, String label, String app, String appArgs, String callerId, int timeout, Map<String,String> variables, String channelId, String otherChannelId, String originator, AriCallback<Channel> callback){
+  throw new UnsupportedOperationException("Method availble from ...");
+};
+
+/**********************************************************
+ * RTP stats on a channel.
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public RTPstat rtpstatistics(String channelId) throws RestException{
   throw new UnsupportedOperationException("Method availble from ...");
 };
 
@@ -880,6 +900,15 @@ public void originateWithId(String channelId, String endpoint, String extension,
 /**********************************************************
  * 
  * 
+ * @since ari_4_0_2
+ *********************************************************/
+public void rtpstatistics(String channelId, AriCallback<RTPstat> callback){
+  throw new UnsupportedOperationException("Method availble from ...");
+};
+
+/**********************************************************
+ * 
+ * 
  * @since ari_1_7_0
  *********************************************************/
 public void continueInDialplan(String channelId, String context, String extension, int priority, String label, AriCallback<Void> callback){
@@ -893,6 +922,15 @@ public void continueInDialplan(String channelId, String context, String extensio
  * @since ari_1_10_0
  *********************************************************/
 public void dial(String channelId, String caller, int timeout) throws RestException{
+  throw new UnsupportedOperationException("Method availble from ...");
+};
+
+/**********************************************************
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public void move(String channelId, String app, String appArgs, AriCallback<Void> callback){
   throw new UnsupportedOperationException("Method availble from ...");
 };
 

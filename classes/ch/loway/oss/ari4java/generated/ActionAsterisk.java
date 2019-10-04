@@ -3,7 +3,7 @@ package ch.loway.oss.ari4java.generated;
 // ----------------------------------------------------
 //      THIS CLASS WAS GENERATED AUTOMATICALLY         
 //               PLEASE DO NOT EDIT                    
-//    Generated on: Tue Dec 19 09:55:48 CET 2017
+//    Generated on: Wed Oct 02 15:49:49 SAST 2019
 // ----------------------------------------------------
 
 import java.util.Date;
@@ -91,6 +91,16 @@ public void deleteObject(String configClass, String objectType, String id, AriCa
  * @since ari_1_9_0
  *********************************************************/
 public void deleteLog(String logChannelName) throws RestException;
+
+
+
+// void ping AriCallback<AsteriskPing> callback
+/**********************************************************
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public void ping(AriCallback<AsteriskPing> callback);
 
 
 
@@ -281,6 +291,17 @@ public void getObject(String configClass, String objectType, String id, AriCallb
  * @since ari_1_9_0
  *********************************************************/
 public void addLog(String logChannelName, String configuration) throws RestException;
+
+
+
+// AsteriskPing ping
+/**********************************************************
+ * Response pong message.
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public AsteriskPing ping() throws RestException;
 
 
 

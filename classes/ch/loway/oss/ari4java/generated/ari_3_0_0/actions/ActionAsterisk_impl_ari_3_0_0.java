@@ -3,7 +3,7 @@ package ch.loway.oss.ari4java.generated.ari_3_0_0.actions;
 // ----------------------------------------------------
 //      THIS CLASS WAS GENERATED AUTOMATICALLY         
 //               PLEASE DO NOT EDIT                    
-//    Generated on: Tue Dec 19 09:55:49 CET 2017
+//    Generated on: Wed Oct 02 15:49:50 SAST 2019
 // ----------------------------------------------------
 
 import ch.loway.oss.ari4java.generated.*;
@@ -407,6 +407,24 @@ buildSetGlobalVar(variable, value);
 httpActionAsync(callback);
 }
 
-/** No missing signatures from interface */
+/**********************************************************
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public void ping(AriCallback<AsteriskPing> callback){
+  throw new UnsupportedOperationException("Method availble from ...");
+};
+
+/**********************************************************
+ * Response pong message.
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public AsteriskPing ping() throws RestException{
+  throw new UnsupportedOperationException("Method availble from ...");
+};
+
 };
 

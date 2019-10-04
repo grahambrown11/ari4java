@@ -14,8 +14,9 @@ public class run {
 
     //public static String SOURCES = "codegen-data/";
     
-    public static String PROJECT = "/Users/lenz/Desktop/ari4java";
-    
+//    public static String PROJECT = "/Users/lenz/Desktop/ari4java";
+    public static String PROJECT = "/Users/graham/Dev/github/ari4java";
+
     public static String SOURCES = PROJECT + "/codegen-data/";
     
 
@@ -39,7 +40,8 @@ public class run {
         loadAsteriskDefs( dm, "ari_1_10_0" );
         loadAsteriskDefs( dm, "ari_2_0_0" );
         loadAsteriskDefs( dm, "ari_3_0_0" );
-        
+        loadAsteriskDefs( dm, "ari_4_0_2" );
+
         dm.generateAllClasses();
 
 

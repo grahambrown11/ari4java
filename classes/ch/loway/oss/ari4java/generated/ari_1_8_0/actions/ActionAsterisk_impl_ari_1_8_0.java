@@ -3,7 +3,7 @@ package ch.loway.oss.ari4java.generated.ari_1_8_0.actions;
 // ----------------------------------------------------
 //      THIS CLASS WAS GENERATED AUTOMATICALLY         
 //               PLEASE DO NOT EDIT                    
-//    Generated on: Tue Dec 19 09:55:49 CET 2017
+//    Generated on: Wed Oct 02 15:49:50 SAST 2019
 // ----------------------------------------------------
 
 import ch.loway.oss.ari4java.generated.*;
@@ -331,6 +331,15 @@ public void deleteLog(String logChannelName) throws RestException{
 /**********************************************************
  * 
  * 
+ * @since ari_4_0_2
+ *********************************************************/
+public void ping(AriCallback<AsteriskPing> callback){
+  throw new UnsupportedOperationException("Method availble from ...");
+};
+
+/**********************************************************
+ * 
+ * 
  * @since ari_1_9_0
  *********************************************************/
 public void rotateLog(String logChannelName, AriCallback<Void> callback){
@@ -363,6 +372,16 @@ public List<LogChannel> listLogChannels() throws RestException{
  * @since ari_1_9_0
  *********************************************************/
 public void addLog(String logChannelName, String configuration) throws RestException{
+  throw new UnsupportedOperationException("Method availble from ...");
+};
+
+/**********************************************************
+ * Response pong message.
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public AsteriskPing ping() throws RestException{
   throw new UnsupportedOperationException("Method availble from ...");
 };
 

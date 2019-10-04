@@ -3,7 +3,7 @@ package ch.loway.oss.ari4java.generated;
 // ----------------------------------------------------
 //      THIS CLASS WAS GENERATED AUTOMATICALLY         
 //               PLEASE DO NOT EDIT                    
-//    Generated on: Tue Dec 19 09:55:48 CET 2017
+//    Generated on: Wed Oct 02 15:49:49 SAST 2019
 // ----------------------------------------------------
 
 import java.util.Date;
@@ -72,6 +72,36 @@ public interface Application {
 
 
 
+// void setEndpoint_ids List<String>
+/**********************************************************
+ * {tech}/{resource} for endpoints subscribed to.
+ * 
+ * @since ari_0_0_1
+ *********************************************************/
+ public void setEndpoint_ids(List<String> val );
+
+
+
+// void setBridge_ids List<String>
+/**********************************************************
+ * Id's for bridges subscribed to.
+ * 
+ * @since ari_0_0_1
+ *********************************************************/
+ public void setBridge_ids(List<String> val );
+
+
+
+// void setEvents_allowed List<String>
+/**********************************************************
+ * Event types sent to the application.
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+ public void setEvents_allowed(List<String> val );
+
+
+
 // List<String> getEndpoint_ids
 /**********************************************************
  * {tech}/{resource} for endpoints subscribed to.
@@ -82,13 +112,13 @@ public interface Application {
 
 
 
-// void setEndpoint_ids List<String>
+// List<String> getEvents_disallowed
 /**********************************************************
- * {tech}/{resource} for endpoints subscribed to.
+ * Event types not sent to the application.
  * 
- * @since ari_0_0_1
+ * @since ari_4_0_2
  *********************************************************/
- public void setEndpoint_ids(List<String> val );
+ public List<String> getEvents_disallowed();
 
 
 
@@ -112,13 +142,23 @@ public interface Application {
 
 
 
-// void setBridge_ids List<String>
+// void setEvents_disallowed List<String>
 /**********************************************************
- * Id's for bridges subscribed to.
+ * Event types not sent to the application.
  * 
- * @since ari_0_0_1
+ * @since ari_4_0_2
  *********************************************************/
- public void setBridge_ids(List<String> val );
+ public void setEvents_disallowed(List<String> val );
+
+
+
+// List<String> getEvents_allowed
+/**********************************************************
+ * Event types sent to the application.
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+ public List<String> getEvents_allowed();
 
 
 }

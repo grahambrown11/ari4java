@@ -3,7 +3,7 @@ package ch.loway.oss.ari4java.generated.ari_0_0_1.models;
 // ----------------------------------------------------
 //      THIS CLASS WAS GENERATED AUTOMATICALLY         
 //               PLEASE DO NOT EDIT                    
-//    Generated on: Tue Dec 19 09:55:48 CET 2017
+//    Generated on: Wed Oct 02 15:49:49 SAST 2019
 // ----------------------------------------------------
 
 import ch.loway.oss.ari4java.generated.*;
@@ -79,6 +79,15 @@ private static final long serialVersionUID = 1L;
  }
 
 /**********************************************************
+ * Timestamp when bridge was created
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+ public Date getCreationtime(){
+  throw new UnsupportedOperationException("Method availble from ...");
+};
+
+/**********************************************************
  * Name the creator gave the bridge
  * 
  * @since ari_1_0_0
@@ -93,6 +102,15 @@ private static final long serialVersionUID = 1L;
  * @since ari_2_0_0
  *********************************************************/
  public String getVideo_mode(){
+  throw new UnsupportedOperationException("Method availble from ...");
+};
+
+/**********************************************************
+ * Timestamp when bridge was created
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+ public void setCreationtime(Date val ){
   throw new UnsupportedOperationException("Method availble from ...");
 };
 

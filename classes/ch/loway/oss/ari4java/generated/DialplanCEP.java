@@ -3,7 +3,7 @@ package ch.loway.oss.ari4java.generated;
 // ----------------------------------------------------
 //      THIS CLASS WAS GENERATED AUTOMATICALLY         
 //               PLEASE DO NOT EDIT                    
-//    Generated on: Tue Dec 19 09:55:48 CET 2017
+//    Generated on: Wed Oct 02 15:49:49 SAST 2019
 // ----------------------------------------------------
 
 import java.util.Date;
@@ -22,6 +22,16 @@ import ch.loway.oss.ari4java.tools.tags.*;
 
 public interface DialplanCEP {
 
+// String getApp_data
+/**********************************************************
+ * Parameter of current dialplan application
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+ public String getApp_data();
+
+
+
 // String getContext
 /**********************************************************
  * Context in the dialplan
@@ -29,6 +39,26 @@ public interface DialplanCEP {
  * @since ari_0_0_1
  *********************************************************/
  public String getContext();
+
+
+
+// void setApp_name String
+/**********************************************************
+ * Name of current dialplan application
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+ public void setApp_name(String val );
+
+
+
+// String getApp_name
+/**********************************************************
+ * Name of current dialplan application
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+ public String getApp_name();
 
 
 
@@ -79,6 +109,16 @@ public interface DialplanCEP {
  * @since ari_0_0_1
  *********************************************************/
  public String getExten();
+
+
+
+// void setApp_data String
+/**********************************************************
+ * Parameter of current dialplan application
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+ public void setApp_data(String val );
 
 
 }

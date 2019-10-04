@@ -3,7 +3,7 @@ package ch.loway.oss.ari4java.generated;
 // ----------------------------------------------------
 //      THIS CLASS WAS GENERATED AUTOMATICALLY         
 //               PLEASE DO NOT EDIT                    
-//    Generated on: Tue Dec 19 09:55:48 CET 2017
+//    Generated on: Wed Oct 02 15:49:49 SAST 2019
 // ----------------------------------------------------
 
 import java.util.Date;
@@ -102,6 +102,17 @@ public void answer(String channelId) throws RestException;
  * @since ari_0_0_1
  *********************************************************/
 public void stopSilence(String channelId, AriCallback<Void> callback);
+
+
+
+// void move String String String
+/**********************************************************
+ * Move the channel from one Stasis application to another.
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public void move(String channelId, String app, String appArgs) throws RestException;
 
 
 
@@ -228,6 +239,17 @@ public void stopMoh(String channelId, AriCallback<Void> callback);
  * @since ari_1_5_0
  *********************************************************/
 public Channel originateWithId(String channelId, String endpoint, String extension, String context, long priority, String app, String appArgs, String callerId, int timeout, Map<String,String> variables, String otherChannelId) throws RestException;
+
+
+
+// RTPstat rtpstatistics String
+/**********************************************************
+ * RTP stats on a channel.
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public RTPstat rtpstatistics(String channelId) throws RestException;
 
 
 
@@ -576,6 +598,16 @@ public void originateWithId(String channelId, String endpoint, String extension,
 
 
 
+// void rtpstatistics String AriCallback<RTPstat> callback
+/**********************************************************
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public void rtpstatistics(String channelId, AriCallback<RTPstat> callback);
+
+
+
 // void continueInDialplan String String String int String AriCallback<Void> callback
 /**********************************************************
  * 
@@ -605,6 +637,16 @@ public void dial(String channelId, String caller, int timeout) throws RestExcept
  * @since ari_0_0_1
  *********************************************************/
 public void mute(String channelId, String direction) throws RestException;
+
+
+
+// void move String String String AriCallback<Void> callback
+/**********************************************************
+ * 
+ * 
+ * @since ari_4_0_2
+ *********************************************************/
+public void move(String channelId, String app, String appArgs, AriCallback<Void> callback);
 
 
 

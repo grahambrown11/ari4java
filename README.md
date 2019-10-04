@@ -5,6 +5,16 @@ The Asterisk REST Interface (ARI) bindings for Java.
 
  [ ![Download](https://api.bintray.com/packages/lenz/maven/ari4java/images/download.png) ](https://bintray.com/lenz/maven/ari4java/_latestVersion)
 
+Project status: Looking for a new maintainer
+--------------------------------------------
+
+I am looking for a new maintainer to take over this project, as I currently have no
+time to handle it appropriately. 
+**Looking for someone who is using the library in production and whose business runs a product based on ari4java, so
+they have a very good reason to keep it fit.** Any takers?
+
+
+
 Description
 -----------
 
@@ -24,8 +34,6 @@ across different versions.
   yours from https://github.com/l3nz/whaleware/tree/master/examples/asterisk-load-test
 
 
-**Tip:** join [our ari4java Google+ group](https://plus.google.com/u/0/communities/116130645492865479649) for news, help and plain bouncing of ideas around. 
-
 Using the library
 =================
 
@@ -39,7 +47,7 @@ If you use Gradle (or any tool using Maven dependencies) you can simply declare 
 
 
 	dependencies {
-	    compile 'ch.loway.oss.ari4java:ari4java:0.4.5'
+	    compile 'ch.loway.oss.ari4java:ari4java:0.5.1'
 	}
 
 This will download the package and all required dependencies.
@@ -55,14 +63,6 @@ generated classes are under "ch.loway.oss.ari4vaja.generated". They should not b
 * "codegen/" contains the Java code that creates auto-generated classes.
 * "codegen-data/" contains Swagger models from different versions of the interface (copied from Asterisk).
 
-Creating Java code out of Swagger definitions
----------------------------------------------
-
-In order to run codegen (class ch.loway.oss.ari4java.codegen.run), you need the following libraries:
-
-- jackson-core-2.2.2
-- jackson-databind-2.2.2
-- jackson-annotations-2.2.2
 
 Testing and packaging
 ---------------------
@@ -79,14 +79,16 @@ Running
 
 The project requires:
 
-- jackson-core-2.2.2
-- jackson-databind-2.2.2
-- jackson-annotations-2.2.2
+- jackson-core-2.9.6
+- jackson-databind-2.9.6
+- jackson-annotations-2.9.6
 - netty-all-4.0.25-Final
 
 Status
 ------
 
+* 19.04.03 - Rel 0.5.1. Goodbye Naama!
+* 19.01.07 - Support java 9 (#108), code generation from gradle(#110), fixed unsubscribing from application correctly(#59), added event interface inheritance(#106) rel 0.5.0
 * 17.12.19 - Added support for ARI 3.0.0 (#78)
 * 17.02.04 - Added support for ARI 2.0.0 (#62) and quicker deserialization (#63)
 * 16.11.30 - Fixes on Graham's AutoReconnect patch - #60 - rel 0.4.3 

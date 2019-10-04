@@ -4,6 +4,7 @@ import ch.loway.oss.ari4java.generated.Message;
 import ch.loway.oss.ari4java.tools.WsClient.WsClientConnection;
 
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -23,7 +24,7 @@ import java.util.List;
 public class BaseAriAction {
 
     // Shared ObjectMapper
-    private static final ObjectMapper mapper = new ObjectMapper();
+    private static final ObjectMapper mapper;
 
     private String forcedResponse = null;
     private HttpClient httpClient;
@@ -37,6 +38,11 @@ public class BaseAriAction {
     protected boolean wsUpgrade = false;
     protected WsClientConnection wsConnection;
     private List<BaseAriAction> liveActionList;
+
+    static {
+        mapper = new ObjectMapper();
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+    }
 
     /**
      * Reset contents in preparation for new RPC
